@@ -4,19 +4,37 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    android:gravity="center"
+    android:padding="10dp"
+    tools:context=".MainActivity"
+    android:id="@+id/rootLayout">
 
-    <Button
-        android:id="@+id/customer"
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="T A S k"
+        android:textSize="36dp" />
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Customer" />
-
-    <Button
-        android:id="@+id/driver"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Driver" />
-
+        android:orientation="horizontal">
+        <Button
+            android:layout_weight=".5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="@string/login"
+            android:id="@+id/login"
+            android:layout_margin="10dp"
+            />
+        <Button
+            android:layout_weight=".5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="@string/registration"
+            android:id="@+id/registration"
+            android:layout_margin="10dp"
+            />
+    </LinearLayout>
 
 </LinearLayout>

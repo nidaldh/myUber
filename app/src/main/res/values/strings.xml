@@ -2,4 +2,8 @@
     <string name="app_name">Uber</string>
     <string name="email">Email</string>
     <string name="password">password</string>
+    <string name="login">Login</string>
+    <string name="customer">Customer</string>
+    <string name="driver">Driver</string>
+    <string name="registration">Registration</string>
 </resources>
